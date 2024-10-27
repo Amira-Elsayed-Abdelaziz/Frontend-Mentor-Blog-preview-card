@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0% 0%;
+    --yellow: hsl(47, 88%, 63%);
+    --Gray-500: hsl(0, 0%, 42%);
+    --Gray-950: hsl(0, 0%, 7%);
+}
+body {
+    background-color: var(--yellow);
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.card {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6%;
+    height: 450px;
+    width: 340px;
+    border: 1px solid black;
+    border-radius: 5%;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 8px 8px 0px 0px black;
+}
+
+.card-content {
+    margin: 5% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+}
+
+.card-date,
+.card-par {
+    font-weight: 500;
+
+}
+
+.card-title a {
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    font-size: 20px;
+
+}
+
+.card-title a:hover {
+    color: var(--yellow);
+
+
+}
+
+.card-par {
+    color: var(--Gray-500);
+    font-size: 15px;
+
+}
+
+.card-img {
+    margin: 5% 5%;
+    height: 40%;
+    width: 90%;
+    border-radius: 5%;
+
+}
+
+.card-img>svg {
+
+    border-radius: 5% 5%;
+
+    height: 100%;
+    width: 100%;
+}
+
+.card-cat>span {
+    background-color: var(--yellow);
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 5%;
+    font-weight: 800;
+}
+
+.card-user {
+
+    display: flex;
+    align-items: center;
+
+
+}
+
+.user-avatar {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.user-name {
+    font-weight: 800;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 375px) {
+    .card {
+
+        margin-top: 15%;
+
+
+    }
+}
